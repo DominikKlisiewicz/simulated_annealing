@@ -30,7 +30,7 @@ def simulated_annealing(f, x, d=0.5, a=0.99, t0 = 10, K=100):
 def f(x):
     return np.sum((x**2 - 4*x + 4))
 
-# Initial solution (2-dimensional example)
+# Initial solution
 x = np.array([0])
 r = simulated_annealing(f=f,x=x)
 print(r["x_optimal"]) 
